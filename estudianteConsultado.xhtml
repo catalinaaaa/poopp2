@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">    
+      
+    <h:head>
+        <title>Estudiante consultado</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h2>Estudiante #{estudiante.nombre}</h2>
+            <div style="padding:15px;">
+                <h2>Carnet #{estudiante.carnet}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Carrera #{estudiante.carrera}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Email #{estudiante.email}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Calificacion #{estudiante.calificacion}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Numero telefónico #{estudiante.numTel}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Limite de reservas #{estudiante.limReservas}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Cantidad de incidentes #{estudiante.cantIncidentes}</h2>
+            </div>
+            <div style="padding:15px;">
+                <h2>Reservar realizadas:</h2>
+            </div>
+                        
+            <div style="padding:15px;">
+                <h:commandButton id="btRegresar" value="Regresar" action="#{estudiante.consultarEstudiante()}"/>
+            </div>            
+        </h:form>
+    </h:body>
+</html>
